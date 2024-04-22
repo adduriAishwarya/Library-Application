@@ -84,6 +84,8 @@ This project is a Library Management System developed in Java with HTML, CSS, an
 
 This project is licensed under the [MIT License](LICENSE).
 
+#Link to Video Presentation: https://northeastern-my.sharepoint.com/personal/adduri_l_northeastern_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fadduri_l_northeastern_edu%2FDocuments%2FRecordings%2FCall%20with%20Sai%20and%203%20others-20240422_131435-Meeting%20Recording%2Emp4&referrer=Teams%2ETEAMS-ELECTRON&referrerScenario=MeetingChicletExpiration%2Eview%2Eview&ga=1
+
 ## Acknowledgements
 
 - Special thanks to Prof Daniel Peters.
