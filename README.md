@@ -74,7 +74,11 @@ This project is a Library Management System developed in Java with HTML, CSS, an
 
 ## Contributors
 
-- Lakshmi GayatriAishwarya Adduri
+- Lakshmi GayatriAishwarya Adduri (adduri.l@northeastern.edu)
+- SAICHARANTEJ
+- varunsaibuduru
+- ShreyaSisodiya
+- Saibhavanesh
 
 ## License
 
