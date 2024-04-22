@@ -105,14 +105,22 @@ import com.oodProject.library.util.CsvFileUtil;
         List<String[]> credentialsData = CsvFileUtil.readCSV(credentialsCSV);
         for (String[] data : credentialsData) {
             if (data.length >= 4 && "Lib".equals(data[3])) {
-                Librarian librarian = new Librarian();
-                librarian.setId(Integer.parseInt(data[0]));
-            librarian.setUsername(data[1]);
-            librarian.setPassword(data[2]);
-            // librarian.setFirstName(data[4]); // Set the first name
-            // librarian.setLastName(data[5]);  // Set the last name
-            librarians.add(librarian);
-            }
+				Librarian librarian = new Librarian();
+				try {
+					librarian.setId(Integer.parseInt(data[0]));
+					librarian.setUsername(data[1]);
+					librarian.setPassword(data[2]);
+					librarians.add(librarian);
+				} catch (NumberFormatException e) {
+					// Handle the case where ID cannot be parsed as an integer
+					// You might want to log a warning or handle this case differently
+					System.err.println("Error parsing librarian ID: " + e.getMessage());
+				}
+			} else {
+				// Handle the case where data doesn't have enough elements or the role is not "Lib"
+				// You might want to log a warning or handle this case differently
+				System.err.println("Invalid data for librarian: " );
+			}
         }
 		
 	}

@@ -187,7 +187,7 @@ public class LibrarianController {
 
 	private void updateCredentialsCSV(Librarian librarian) {
 		// Get the path of the credentials CSV file
-		String filePath = "credentials.csv";
+		String filePath = "credentials";
 	
 		// Read the current data from the credentials CSV file
 		List<String[]> credentialsData = CsvFileUtil.readCSV(filePath);
