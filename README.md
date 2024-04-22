@@ -90,8 +90,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 - Special thanks to Prof Daniel Peters.
 
-Feel free to contribute, report issues, or suggest improvements!
-
----
-
-Feel free to adjust the README according to your specific project details and preferences.
