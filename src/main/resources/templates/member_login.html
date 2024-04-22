@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Member Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url('backgroung.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow-x: hidden;
+        }
+
+        .text-center {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-white rounded">
+        <div class="row justify-content-center">
+            <h2 class="m-3">
+                Boston Library
+            </h2>
+        </div>
+    </div>
+    <!-- <div class="text-right">
+        <a class="btn btn-primary btn-sm" th:href="@{/}">Home</a>
+    </div> -->
+    <div class="text-center">
+        <a class="btn btn-primary btn-lg" href="/;jsessionid=28CE31C7AD0DD0E9952C04A9C1CBEDD6">Home</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container justify-content-center align-items-center" style="height: 100vh; width: 80%;">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+                <h3 class="text-center mt-4">Member Login</h3>
+                <hr />
+                <div class="card-body">
+                    <form th:action="@{/MemberLogin}" method="POST">
+
+                        <div th:if="${errorMessage}" class="alert alert-danger" role="alert">
+                            <span th:text="${errorMessage}"></span>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label>Username: </label>
+                            <input type="text" name="username" class="form-control" placeholder="Username" required />
+                        </div>
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label>Password: </label>
+                            <input type="password" name="password" class="form-control" placeholder="Password"
+                                required />
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                        </div>
+                    </form>
+                    <div class="text-center">
+                        <a th:href="@{/MemberSignup}" class="mb-3 text-primary"> Not a member? Sign Up..! </a> <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
